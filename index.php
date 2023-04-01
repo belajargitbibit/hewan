@@ -20,6 +20,7 @@ $hewan = query("SELECT * FROM data_hewan");
         <tr>
             <th>No.</th>
             <th>Aksi</th>
+            <th>Gambar</th>
             <th>Nama</th>
             <th>Kelompok</th>
             <th>Jenis</th>
@@ -28,7 +29,7 @@ $hewan = query("SELECT * FROM data_hewan");
 
 
 <?php $i =1; ?>
-        <?php foreach (&hewan as $row) : ?>
+        <?php foreach ($hewan as $row) : ?>
         <tr>
             <td><?= $i ?></td>
             <td>
