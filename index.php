@@ -33,8 +33,8 @@ $hewan = query("SELECT * FROM data_hewan");
         <tr>
             <td><?= $i ?></td>
             <td>
-                <a href="">ubah</a>
-                <a href="">hapus</a>
+                <a href="ubah.php?id=<?= $row['nama']; ?>">ubah</a>
+                <a href="hapus.php?id=<?= $row['nama']; ?>">hapus</a>
             </td>
             <td>
                 <img src="img/<?= $row['gambar']  ?>" width="50">
